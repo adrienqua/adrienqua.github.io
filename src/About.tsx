@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 import { TypeAnimation } from "react-type-animation"
 
 interface AboutProps {
@@ -6,20 +6,6 @@ interface AboutProps {
 }
 
 export default function About({ aboutRef }: AboutProps) {
-    const [developerSpeciality, setDeveloperSpeciality] = useState<Array<string>>(["Front-End", "Fullstack"])
-
-    const handleDeveloperSpeciality = () => {
-        const newDatas = [...developerSpeciality].reverse()
-        setDeveloperSpeciality(newDatas)
-    }
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            handleDeveloperSpeciality()
-        }, 5000)
-        return () => clearInterval(interval)
-    }, [developerSpeciality])
-
     return (
         <div
             ref={aboutRef}
