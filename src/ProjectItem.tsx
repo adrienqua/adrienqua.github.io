@@ -1,5 +1,3 @@
-import React from "react"
-
 interface Project {
     id: number
     title: string

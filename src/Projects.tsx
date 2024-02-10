@@ -12,7 +12,7 @@ export default function Projects({ projectsRef }: ProjectsProps) {
             img: "/img/projects/project1.png",
             imgAlt: "NextJS Ecommerce",
             description:
-                "Une application e-commerce complète créée de zéro avec Next.js. Comprend un back-office et toutes les fonctionnalités digne des plus grands sites e-commerce.",
+                "Une application e-commerce complète créée de zéro avec Next.js. Comprend un back-office et toutes les fonctionnalités dignes des plus grands sites e-commerce.",
             stack: ["Next.js", "React", "Node.js", "Prisma", "Tailwind", "DaisyUI", "Zod", "Stripe"],
             hostedLink: "https://nextjs-ecommerce-rho-steel.vercel.app/",
             gitLink: "https://github.com/adrienqua/nextjs-ecommerce",

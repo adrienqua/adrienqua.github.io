@@ -18,7 +18,7 @@ export default function Navbar({ aboutRef, stackRef, projectsRef, contactRef }: 
     }
 
     return (
-        <div className="navbar bg-slate-950/60 fixed z-20 backdrop-blur-lg border-b border-slate-800/50">
+        <div className="navbar bg-background/60 fixed z-20 backdrop-blur-lg border-b border-slate-800/50">
             <div className="navbar-start">
                 <div className="dropdown ">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
