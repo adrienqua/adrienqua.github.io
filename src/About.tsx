@@ -13,7 +13,7 @@ export default function About({ aboutRef }: AboutProps) {
             className="flex flex-col lg:flex-row items-center space-y-12 md:space-y-0 dark-border  rounded-2xl mt-5 mx-auto lg:space-x-20   px-16 py-20 relative backdrop-blur-3xl rounded-3xl mb-24 items-middle"
         >
             <div className="skrink-0 basis-1/4 text-center" data-aos="fade-right" data-aos-delay="50">
-                <img src="/img/photo.png" alt="photo" width={250} />
+                <img src="/img/photo.png" alt="photo" width={250} className="opacity-95" />
             </div>
             <div className="basis-3/4">
                 <h1

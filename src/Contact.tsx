@@ -55,7 +55,7 @@ export default function Contact({ contactRef }: ContactProps) {
                 </div>
                 <div className="flex gap-2">
                     <a
-                        href="https://www.linkedin.com/in/adrien-quacchia-207716133/"
+                        href="https://github.com/adrienqua"
                         className="btn btn-neutral bg-opacity-40 flex gap-2 rounded-3xl duration-300"
                     >
                         <svg

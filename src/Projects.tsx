@@ -12,7 +12,7 @@ export default function Projects({ projectsRef }: ProjectsProps) {
                 <a
                     href="https://nextjs-ecommerce-rho-steel.vercel.app/"
                     target="blank"
-                    className="card w-1/2 bg-opacity-5 dark-border lg:w-96 bg-base-100 shadow-xl group text-white hover:text-white"
+                    className="card w-full bg-opacity-5 dark-border lg:w-96 bg-base-100 shadow-xl group text-white hover:text-white"
                     data-aos="fade-up"
                 >
                     <figure>
@@ -77,7 +77,7 @@ export default function Projects({ projectsRef }: ProjectsProps) {
                 <a
                     href="http://readit.eu-west-3.elasticbeanstalk.com/#/"
                     target="blank"
-                    className="card w-1/2 bg-opacity-5 dark-border  lg:w-96 bg-base-100 shadow-xl group text-white hover:text-white"
+                    className="card w-full bg-opacity-5 dark-border  lg:w-96 bg-base-100 shadow-xl group text-white hover:text-white"
                     data-aos="fade-up"
                     data-aos-delay="50"
                 >
@@ -143,7 +143,7 @@ export default function Projects({ projectsRef }: ProjectsProps) {
                 <a
                     href="https://github.com/adrienqua/la-boutique-francaise"
                     target="blank"
-                    className="card w-1/2 bg-opacity-5 dark-border  lg:w-96 bg-base-100 shadow-xl group text-white hover:text-white"
+                    className="card w-full bg-opacity-5 dark-border  lg:w-96 bg-base-100 shadow-xl group text-white hover:text-white"
                     data-aos="fade-up"
                     data-aos-delay="100"
                 >
