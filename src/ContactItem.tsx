@@ -16,7 +16,7 @@ export default function ContactItem({ contact }: ContactItemProps) {
             <a
                 href={contact.link}
                 target="_blank"
-                className="btn btn-neutral bg-opacity-40 flex gap-2 rounded-3xl duration-300"
+                className="btn btn-neutral bg-opacity-40 flex gap-2 rounded-3xl duration-300 text-gray-400"
             >
                 {contact.icon}
                 {contact.name}

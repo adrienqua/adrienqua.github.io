@@ -46,7 +46,7 @@ export default function About({ aboutRef }: AboutProps) {
                         />
                     </span>
                 </h2>
-                <p className="text-xl leading-relaxed" data-aos="fade-up" data-aos-delay="100">
+                <p className="text-xl leading-relaxed text-gray-400" data-aos="fade-up" data-aos-delay="100">
                     {datas.description}
                 </p>
             </div>

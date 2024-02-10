@@ -18,7 +18,7 @@ export default function ProjectItem({ project }: ProjectItemProps) {
     return (
         <a
             href={project.hostedLink.length > 0 ? project.hostedLink : project.gitLink}
-            target="blank"
+            target="_blank"
             className="card w-full bg-opacity-5 dark-border lg:w-96 bg-base-100 shadow-xl group text-white hover:text-white"
             data-aos="fade-up"
         >
@@ -32,7 +32,7 @@ export default function ProjectItem({ project }: ProjectItemProps) {
                     </h2>
                     <div className="flex space-x-4">
                         {project.hostedLink.length > 0 && (
-                            <a href={project.hostedLink}>
+                            <a href={project.hostedLink} target="_blank">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     fill="none"
@@ -49,7 +49,7 @@ export default function ProjectItem({ project }: ProjectItemProps) {
                                 </svg>
                             </a>
                         )}
-                        <a href={project.gitLink}>
+                        <a href={project.gitLink} target="_blank">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 stroke="currentColor"
@@ -64,10 +64,10 @@ export default function ProjectItem({ project }: ProjectItemProps) {
                         </a>
                     </div>
                 </div>
-                <p>{project.description}</p>
+                <p className="text-gray-400">{project.description}</p>
                 <div className="card-actions justify-end mt-3">
                     {project.stack.map((stackItem) => (
-                        <div className="badge badge-outline" key={stackItem}>
+                        <div className="badge badge-outline text-gray-400" key={stackItem}>
                             {stackItem}
                         </div>
                     ))}

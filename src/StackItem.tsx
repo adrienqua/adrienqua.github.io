@@ -20,7 +20,7 @@ export default function StackItem({ item }: stackProps) {
             <h3 className="text-2xl font-semibold mb-2">{item.title}</h3>
             <ul>
                 {item.technologies.map((technology) => (
-                    <li className="flex items-center gap-2" key={technology.name}>
+                    <li className="flex items-center gap-2 text-gray-400" key={technology.name}>
                         {technology.icon}
                         {technology.name}
                     </li>

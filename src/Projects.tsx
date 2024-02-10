@@ -11,7 +11,8 @@ export default function Projects({ projectsRef }: ProjectsProps) {
             title: "NextJS Ecommerce",
             img: "/img/projects/project1.png",
             imgAlt: "NextJS Ecommerce",
-            description: "Une application e-commerce complète créée de zéro avec Next.js.",
+            description:
+                "Une application e-commerce complète créée de zéro avec Next.js. Comprend un back-office et toutes les fonctionnalités digne des plus grands sites e-commerce.",
             stack: ["Next.js", "React", "Node.js", "Prisma", "Tailwind", "DaisyUI", "Zod", "Stripe"],
             hostedLink: "https://nextjs-ecommerce-rho-steel.vercel.app/",
             gitLink: "https://github.com/adrienqua/nextjs-ecommerce",
@@ -22,7 +23,7 @@ export default function Projects({ projectsRef }: ProjectsProps) {
             img: "/img/projects/project2.png",
             imgAlt: "Readit",
             description:
-                "Application inspirée par reddit avec son fameux système de votes et de commentaires imbriqués infinis.",
+                "Application React / Symfony / Api Platform inspirée par reddit avec son fameux système de votes et de commentaires imbriqués infinis.",
             stack: ["React", "Symfony", "Api Platform", "Bootstrap", "Zod"],
             hostedLink: "http://readit.eu-west-3.elasticbeanstalk.com/#/",
             gitLink: "https://github.com/adrienqua/readit",
