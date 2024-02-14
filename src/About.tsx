@@ -9,7 +9,7 @@ export default function About({ aboutRef }: AboutProps) {
     const datas = {
         name: "Adrien Quacchia",
         description:
-            "Passionné par les nouvelles technologies, je suis spécialisé dans le développement front-end, notamment sur React. Je maîtrise également le back-end avec Symfony, API Platform et NodeJS. Je recherche un poste de développeur front-end ou fullstack, de préférence sur ces technologies, mais je suis également ouvert à d’autres possibilités",
+            "Passionné par les nouvelles technologies, je suis spécialisé dans le développement front-end, notamment sur React. Je maîtrise également le back-end avec Symfony, API Platform et NodeJS. Je recherche un poste de développeur front-end ou fullstack, de préférence sur ces technologies, mais je suis également ouvert à d’autres possibilités.",
         img: "/img/photo.png",
         imgAlt: "photo",
     }
@@ -17,14 +17,14 @@ export default function About({ aboutRef }: AboutProps) {
         <div
             ref={aboutRef}
             id="about"
-            className="flex flex-col lg:flex-row items-center space-y-12 md:space-y-0 dark-border  rounded-2xl mt-5 mx-auto lg:space-x-20   px-16 py-20 relative backdrop-blur-3xl rounded-3xl mb-24 items-middle"
+            className="flex flex-col lg:flex-row items-center space-y-12 lg:space-y-0 dark-border  rounded-2xl mt-5 mx-auto lg:space-x-20   px-16 py-20 relative backdrop-blur-3xl rounded-3xl mb-24 items-middle w-full"
         >
             <div className="skrink-0 basis-1/4 text-center" data-aos="fade-right" data-aos-delay="50">
                 <img src={datas.img} alt={datas.imgAlt} width={250} className="opacity-95" />
             </div>
             <div className="basis-3/4">
                 <h1
-                    className="text-primary leading-normal text-5xl uppercase font-bold bg-gradient-to-r from-indigo-500  via-purple-600 from-20% via-60%  text-transparent bg-clip-text"
+                    className="text-primary my-3 text-5xl inline-block uppercase font-bold bg-gradient-to-r from-indigo-500  to-purple-600 from-20%  text-transparent bg-clip-text"
                     data-aos="fade-up"
                 >
                     {datas.name}

@@ -17,11 +17,15 @@ export default function ProjectItem({ project }: ProjectItemProps) {
         <a
             href={project.hostedLink.length > 0 ? project.hostedLink : project.gitLink}
             target="_blank"
-            className="card w-full bg-opacity-5 dark-border lg:w-96 bg-base-100 shadow-xl group text-white hover:text-white"
+            className="card w-full bg-opacity-5 dark-border lg:w-96 bg-base-100 shadow-xl group text-white hover:text-white rounded-3xl"
             data-aos="fade-up"
         >
             <figure>
-                <img className="group-hover:scale-110 transition duration-300" src={project.img} alt={project.imgAlt} />
+                <img
+                    className="group-hover:scale-110 transition duration-300 ease-in-out"
+                    src={project.img}
+                    alt={project.imgAlt}
+                />
             </figure>
             <div className="card-body">
                 <div className="flex flex-row">

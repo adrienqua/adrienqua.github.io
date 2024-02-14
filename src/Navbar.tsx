@@ -19,7 +19,7 @@ export default function Navbar({ aboutRef, stackRef, projectsRef, contactRef }: 
 
     return (
         <div className="navbar bg-background/60 fixed z-20 backdrop-blur-lg border-b border-slate-800/50">
-            <div className="navbar-start">
+            <div className="container">
                 <div className="dropdown ">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
                         <svg
@@ -60,23 +60,23 @@ export default function Navbar({ aboutRef, stackRef, projectsRef, contactRef }: 
                         <img src="/img/photo.png" alt="photo" width={40} />
                     </a>
                 </div>
-            </div>
 
-            <div className="navbar-end lg:flex hidden">
-                <ul className="menu menu-horizontal px-1">
-                    <li>
-                        <a onClick={() => scrollToDiv(aboutRef)}>A propos</a>
-                    </li>
-                    <li>
-                        <a onClick={() => scrollToDiv(stackRef)}>Stack</a>
-                    </li>
-                    <li>
-                        <a onClick={() => scrollToDiv(projectsRef)}>Projets</a>
-                    </li>
-                    <li>
-                        <a onClick={() => scrollToDiv(contactRef)}>Contact</a>
-                    </li>
-                </ul>
+                <div className=" lg:flex hidden">
+                    <ul className="menu menu-horizontal px-1">
+                        <li>
+                            <a onClick={() => scrollToDiv(aboutRef)}>A propos</a>
+                        </li>
+                        <li>
+                            <a onClick={() => scrollToDiv(stackRef)}>Stack</a>
+                        </li>
+                        <li>
+                            <a onClick={() => scrollToDiv(projectsRef)}>Projets</a>
+                        </li>
+                        <li>
+                            <a onClick={() => scrollToDiv(contactRef)}>Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     )
