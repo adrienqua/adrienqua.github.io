@@ -22,7 +22,7 @@ export default function ProjectItem({ project }: ProjectItemProps) {
         >
             <figure>
                 <img
-                    className="group-hover:scale-110 transition duration-300 ease-in-out"
+                    className="group-hover:scale-110 group-hover:brightness-[100%] group-hover:contrast-[100%] transition duration-300 ease-in-out  brightness-[80%] contrast-[110%]"
                     src={project.img}
                     alt={project.imgAlt}
                 />

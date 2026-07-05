@@ -96,9 +96,9 @@ export default function Stack({ stackRef }: StackProps) {
         },
     ]
     return (
-        <div ref={stackRef} id="stack" className="mb-24">
+        <div ref={stackRef} id="stack" className="mb-32">
             <h2 className="text-3xl font-bold mb-12 uppercase text-center">Stack</h2>
-            <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 space-x-0 lg:space-x-4 justify-between leading-loose font-semibold">
+            <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 space-x-0 lg:space-x-8 justify-between leading-loose font-semibold">
                 {stack.map((stackItem) => (
                     <StackItem item={stackItem} key={stackItem.title} />
                 ))}

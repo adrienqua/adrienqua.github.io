@@ -41,10 +41,10 @@ export default function Projects({ projectsRef }: ProjectsProps) {
     ]
 
     return (
-        <div ref={projectsRef} id="projects" className="mb-24">
+        <div ref={projectsRef} id="projects" className="mb-32">
             <h2 className="text-3xl font-bold mb-12 uppercase text-center">Sélection de projets</h2>
 
-            <div className="flex flex-col lg:flex-row lg:space-x-4 space-y-4 lg:space-y-0 items-center lg:items-stretch">
+            <div className="flex flex-col lg:flex-row lg:space-x-8 space-y-4 lg:space-y-0 items-center lg:items-stretch">
                 {projects.map((project) => (
                     <ProjectItem project={project} key={project.id} />
                 ))}

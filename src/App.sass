@@ -29,3 +29,28 @@ body
 
 h1, h2, h3
     font-family: "Poppins"
+
+a, button
+    @apply duration-300 ease-in-out
+    
+
+@keyframes arrowDown
+  0%
+    transform: translateY(0)
+    opacity: 0
+  15%
+    opacity: 1
+
+  65% 
+    opacity: 0
+  70%
+    transform: translateY(35px) 
+    opacity: 0
+     
+  100%
+    transform: translateY(0) 
+    opacity: 0
+    
+
+.arrow
+  animation: arrowDown 3s infinite ease-in-out 

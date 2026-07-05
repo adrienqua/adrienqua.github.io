@@ -10,12 +10,12 @@ export default function Contact({ contactRef }: ContactProps) {
     const contacts = [
         {
             name: "LinkedIn",
-            icon: linkedInIcon(),
+            icon: linkedInIcon("1.25rem"),
             link: "https://www.linkedin.com/in/adrien-quacchia-207716133/",
         },
         {
             name: "adrien.quacchia@gmail.com",
-            icon: mailIcon(),
+            icon: mailIcon("1.25rem"),
             link: "mailto:adrien.quacchia@gmail.com",
         },
         {

@@ -1,22 +1,15 @@
 import React from "react"
+import { scrollToDiv } from "./utils/scroll"
 
 interface NavbarProps {
     aboutRef: React.RefObject<HTMLDivElement>
     stackRef: React.RefObject<HTMLDivElement>
     projectsRef: React.RefObject<HTMLDivElement>
     contactRef: React.RefObject<HTMLDivElement>
+    galleryRef: React.RefObject<HTMLDivElement>
 }
 
-export default function Navbar({ aboutRef, stackRef, projectsRef, contactRef }: NavbarProps) {
-    const scrollToDiv = (div: React.RefObject<HTMLDivElement>) => {
-        if (div.current) {
-            window.scrollTo({
-                behavior: "smooth",
-                top: div.current?.getBoundingClientRect().top + window.scrollY - 90,
-            })
-        }
-    }
-
+export default function Navbar({ aboutRef, stackRef, projectsRef, contactRef, galleryRef }: NavbarProps) {
     return (
         <div className="navbar bg-background/60 fixed z-20 backdrop-blur-lg border-b border-slate-800/50">
             <div className="container">
@@ -51,6 +44,9 @@ export default function Navbar({ aboutRef, stackRef, projectsRef, contactRef }: 
                             <a onClick={() => scrollToDiv(projectsRef)}>Projets</a>
                         </li>
                         <li>
+                            <a onClick={() => scrollToDiv(galleryRef)}>Galerie</a>
+                        </li>
+                        <li>
                             <a onClick={() => scrollToDiv(contactRef)}>Contact</a>
                         </li>
                     </ul>
@@ -62,7 +58,7 @@ export default function Navbar({ aboutRef, stackRef, projectsRef, contactRef }: 
                 </div>
 
                 <div className=" lg:flex hidden">
-                    <ul className="menu menu-horizontal px-1">
+                    <ul className="menu menu-horizontal px-1 text-[1rem]">
                         <li>
                             <a onClick={() => scrollToDiv(aboutRef)}>A propos</a>
                         </li>
@@ -71,6 +67,9 @@ export default function Navbar({ aboutRef, stackRef, projectsRef, contactRef }: 
                         </li>
                         <li>
                             <a onClick={() => scrollToDiv(projectsRef)}>Projets</a>
+                        </li>
+                        <li>
+                            <a onClick={() => scrollToDiv(galleryRef)}>Galerie</a>
                         </li>
                         <li>
                             <a onClick={() => scrollToDiv(contactRef)}>Contact</a>
