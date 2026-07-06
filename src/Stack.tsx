@@ -1,18 +1,25 @@
 import React from "react"
 import {
     tailwindIcon,
-    bootstrapIcon,
     sassIcon,
+    storybookIcon,
     typescriptIcon,
     reactIcon,
     nextJsIcon,
     nodeJsIcon,
     symfonyIcon,
+    laravelIcon,
     apiPlatformIcon,
-    mySQLIcon,
-    gitIcon,
+    postgresqlIcon,
+    dockerIcon,
+    githubActionsIcon,
     vercelIcon,
-    postmanIcon,
+    awsIcon,
+    terraformIcon,
+    ansibleIcon,
+    openaiIcon,
+    claudeIcon,
+    n8nIcon,
 } from "./icons"
 import StackItem from "./StackItem"
 
@@ -22,23 +29,6 @@ interface StackProps {
 
 export default function Stack({ stackRef }: StackProps) {
     const stack = [
-        {
-            title: "Design",
-            technologies: [
-                {
-                    name: "Tailwind",
-                    icon: tailwindIcon(),
-                },
-                {
-                    name: "Bootstrap",
-                    icon: bootstrapIcon(),
-                },
-                {
-                    name: "SCSS, SASS",
-                    icon: sassIcon(),
-                },
-            ],
-        },
         {
             title: "Front-end",
             technologies: [
@@ -54,6 +44,18 @@ export default function Stack({ stackRef }: StackProps) {
                     name: "Next.js",
                     icon: nextJsIcon(),
                 },
+                {
+                    name: "Tailwind",
+                    icon: tailwindIcon(),
+                },
+                {
+                    name: "SCSS, SASS",
+                    icon: sassIcon(),
+                },
+                {
+                    name: "Storybook",
+                    icon: storybookIcon(),
+                },
             ],
         },
         {
@@ -68,29 +70,62 @@ export default function Stack({ stackRef }: StackProps) {
                     icon: symfonyIcon(),
                 },
                 {
+                    name: "Laravel",
+                    icon: laravelIcon(),
+                },
+                {
                     name: "Api platform",
                     icon: apiPlatformIcon(),
                 },
                 {
-                    name: "MySQL",
-                    icon: mySQLIcon(),
+                    name: "PostgreSQL",
+                    icon: postgresqlIcon(),
                 },
             ],
         },
         {
-            title: "Autre",
+            title: "Devops",
             technologies: [
                 {
-                    name: "Github",
-                    icon: gitIcon(),
+                    name: "Docker",
+                    icon: dockerIcon(),
+                },
+                {
+                    name: "CI / CD  GitHub Actions",
+                    icon: githubActionsIcon(),
+                },
+                {
+                    name: "Terraform",
+                    icon: terraformIcon(),
+                },
+                {
+                    name: "Ansible",
+                    icon: ansibleIcon(),
+                },
+                {
+                    name: "AWS",
+                    icon: awsIcon(),
                 },
                 {
                     name: "Vercel",
                     icon: vercelIcon(),
                 },
+            ],
+        },
+        {
+            title: "IA & automatisation",
+            technologies: [
                 {
-                    name: "Postman",
-                    icon: postmanIcon(),
+                    name: "OpenAI agents",
+                    icon: openaiIcon(),
+                },
+                {
+                    name: "Claude AI MCP",
+                    icon: claudeIcon(),
+                },
+                {
+                    name: "Workflows n8n",
+                    icon: n8nIcon(),
                 },
             ],
         },

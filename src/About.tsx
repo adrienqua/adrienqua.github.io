@@ -12,7 +12,7 @@ export default function About({ aboutRef, stackRef }: AboutProps) {
     const datas = {
         name: "Adrien <br> Quacchia",
         description:
-            "Passionné par les nouvelles technologies, je suis spécialisé dans le développement front-end, notamment sur React. Je maîtrise également le back-end avec Symfony, API Platform et NodeJS. Je recherche un poste de développeur front-end ou fullstack, de préférence sur ces technologies, mais je suis également ouvert à d’autres possibilités.",
+            "Actuellement Software Engineer Fullstack chez Meilleursbiens, je conçois et fais évoluer des applications web de bout en bout (React/Next.js, Node.js, Laravel) tout en développant des solutions d'automatisation et des agents IA (OpenAI, Claude, n8n) pour fluidifier les processus métier. Je m'intéresse également au déploiement d'infrastructures (Docker, CI/CD, Terraform, AWS). Je recherche à allier robustesse technique et gains de productivité grâce à l'IA et à l'automatisation.",
         img: "/img/photo.png",
         imgAlt: "photo",
     }
@@ -47,11 +47,11 @@ export default function About({ aboutRef, stackRef }: AboutProps) {
                             <span>
                                 <TypeAnimation
                                     sequence={[
-                                        "Développeur web Front-End",
+                                        "Software Engineer Fullstack",
                                         3500,
-                                        "Développeur web Fullstack",
+                                        "Automatisation & IA",
                                         4500,
-                                        "Développeur web Front-End",
+                                        "Software Engineer Fullstack",
                                         4000,
                                     ]}
                                     wrapper="span"

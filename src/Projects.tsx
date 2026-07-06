@@ -8,6 +8,20 @@ export default function Projects({ projectsRef }: ProjectsProps) {
     const projects = [
         {
             id: 1,
+            title: "Minuseek",
+            img: "/img/projects/project_minuseek.png",
+            imgAlt: "Minuseek",
+            description:
+                "Plateforme SaaS multi-tenant d'investigation par comparaison d'empreintes digitales, avec un comparateur d'images interactif (zoom, calques, annotations) construit avec Konva. API NestJS en architecture DDD/hexagonale avec authentification multi-tenant Keycloak.",
+            stack: ["React", "TypeScript", "NestJS", "Prisma", "PostgreSQL", "Docker", "Keycloak"],
+            hostedLink: "",
+            gitLinks: [
+                { url: "https://github.com/MT5-fingerprint-project/front-minuseek", label: "Front-end" },
+                { url: "https://github.com/MT5-fingerprint-project/back-minuseek", label: "Back-end" },
+            ],
+        },
+        {
+            id: 2,
             title: "NextJS Ecommerce",
             img: "/img/projects/project1.png",
             imgAlt: "NextJS Ecommerce",
@@ -15,10 +29,10 @@ export default function Projects({ projectsRef }: ProjectsProps) {
                 "Une application e-commerce complète créée de zéro avec Next.js. Comprend un back-office et toutes les fonctionnalités dignes des plus grands sites e-commerce.",
             stack: ["Next.js", "React", "Node.js", "Prisma", "Tailwind", "DaisyUI", "Zod", "Stripe"],
             hostedLink: "https://nextjs-ecommerce-rho-steel.vercel.app/",
-            gitLink: "https://github.com/adrienqua/nextjs-ecommerce",
+            gitLinks: [{ url: "https://github.com/adrienqua/nextjs-ecommerce", label: "Code source" }],
         },
         {
-            id: 2,
+            id: 3,
             title: "Readit",
             img: "/img/projects/project2.png",
             imgAlt: "Readit",
@@ -26,17 +40,7 @@ export default function Projects({ projectsRef }: ProjectsProps) {
                 "Application React / Symfony / Api Platform inspirée par reddit avec son fameux système de votes et de commentaires imbriqués infinis.",
             stack: ["React", "Symfony", "Api Platform", "Bootstrap", "Zod"],
             hostedLink: "http://readit.eu-west-3.elasticbeanstalk.com/#/",
-            gitLink: "https://github.com/adrienqua/readit",
-        },
-        {
-            id: 3,
-            title: "La boutique française",
-            img: "/img/projects/project3.png",
-            imgAlt: "La boutique française",
-            description: "Une application e-commerce créée avec Symfony / Twig.",
-            stack: ["Symfony", "Twig", "Bootstrap", "Zod", "Stripe"],
-            hostedLink: "",
-            gitLink: "https://github.com/adrienqua/la-boutique-francaise",
+            gitLinks: [{ url: "https://github.com/adrienqua/readit", label: "Code source" }],
         },
     ]
 
